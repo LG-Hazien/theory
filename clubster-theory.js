@@ -6,7 +6,7 @@ import { Utils } from "../api/Utils";
 
 var id = "OuO";
 var name = "Clubster";
-var description = "No theory description :("
+var description = "No theory description :(";
 var authors = "JojoGames";
 var version = "v1.0.0";
 

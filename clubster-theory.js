@@ -44,7 +44,7 @@ var tick = (elapsedTime, multiplier) => {
 
 var getPublicationMultiplier = (tau) => tau;
 var getPublicationMultiplierFormula = (symbol) => symbol;
-var getTau = () => currency.value.log2() * 2;
+var getTau = () => clubster.value.log2() * 2;
 
 var getC1 = (level) => level;
 

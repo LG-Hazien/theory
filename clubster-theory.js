@@ -33,6 +33,12 @@ var init = () => {
     theory.createPublicationUpgrade(0, clubster, 1e15);
     theory.createBuyAllUpgrade(1, clubster, 1e33);
     theory.createAutoBuyerUpgrade(2, clubster, 1e63);
+
+    /////////////////
+    //// Achievements   
+
+    ac1 = theory.createAchievementCategory(0, "Clubsters");
+    theory.createAchievement(0, ac1, "Go Go! Started", "Reach 1 Clubster", () => currency.value > 0)
 }
 
 var tick = (elapsedTime, multiplier) => {

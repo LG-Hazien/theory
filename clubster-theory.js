@@ -42,9 +42,9 @@ var tick = (elapsedTime, multiplier) => {
     clubster.value += bonus * getC1(c1.level) * dt;
 }
 
-var getPublicationMultiplier = (tau) => tau;
-var getPublicationMultiplierFormula = (symbol) => symbol;
-var getTau = () => clubster.value.log2() * 2;
+var getPublicationMultiplier = (tau) => tau.pow(0.05);
+var getPublicationMultiplierFormula = (symbol) => symbol + "^{0.05}";
+var getTau = () => clubster.value;
 
 var getC1 = (level) => level;
 
